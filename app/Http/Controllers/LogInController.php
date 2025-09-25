@@ -10,30 +10,24 @@ use Illuminate\Support\Facades\Auth;
 
 class LogInController extends Controller
 {
-     public function login(Request $request)
+      public function login(Request $request)
     {
-        //  validate inputs
+        // Validate inputs
         $request->validate([
             'email' => 'required|email',
             'password' => 'required'
         ]);
 
-        //  check if user exists
+        // Find user
         $user = User::where('email', $request->email)->first();
 
-        if (!$user) {
-            return back()->withErrors(['email' => 'User not found']);
+        if (!$user || !Hash::check($request->password, $user->password)) {
+            return back()->withErrors(['email' => 'Invalid credentials.']);
         }
 
-        //  manually verify password
-        if (Hash::check($request->password, $user->password)) {
-            // log in the user manually
-            Auth::login($user);
+        // Log the user in
+        Auth::login($user);
 
-            return redirect('/dashboard')->with('success', 'Login successful!');
-        } else {
-            return back()->withErrors(['password' => 'Incorrect password']);
-        }
+        return view('pages.index')->with('success', 'Welcome back, ' . $user->name . '!');
     }
 }
-

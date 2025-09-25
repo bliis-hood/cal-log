@@ -10,8 +10,6 @@
         <title>{{ config('app.name', 'CAR-LOG') }}</title>
     </head>
     <body>
-         @include('inc.navbar')
-        <div class="topnav">
         @yield('content')
     </body>
 </html>

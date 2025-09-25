@@ -5,14 +5,14 @@
 
     <!-- Show success message -->
     @if(session('success'))
-        <div style="color: green; margin-bottom: 10px;">
+        <div class="reg-su">
             {{ session('success') }}
         </div>
     @endif
 
     <!-- Show validation errors -->
     @if($errors->any())
-        <div style="color: red; margin-bottom: 10px;">
+        <div class="reg-err">
             <ul>
                 @foreach($errors->all() as $error)
                     <li>{{ $error }}</li>

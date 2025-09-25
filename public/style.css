@@ -85,4 +85,44 @@ nav.navbar-nav.li {
   border: none;
   box-shadow: none;
 }
-
+.log-on{
+  max-width:400px; 
+  margin:auto; 
+  padding:30px; 
+  border:1px solid #ccc; 
+  border-radius:5px;
+  background-color: gray;
+  text-align: center;
+}
+.log-su{
+  color: green;
+}
+.log-err{
+  color: red;
+}
+.log-email{
+  margin-bottom: 10px;
+  width:100%; 
+  padding:10px;
+}
+.log-pass{
+  margin-bottom: 10px;
+  width:100%; 
+  padding:10px;
+}
+button{
+  width:100%; 
+  padding:10px; 
+  background:#3490dc; 
+  color:white; 
+  border:none; 
+  border-radius:5px;
+}
+.reg-su{
+  color: green; 
+  margin-bottom: 10px;
+}
+.reg-err{
+  color: red; 
+  margin-bottom: 10px;
+}
