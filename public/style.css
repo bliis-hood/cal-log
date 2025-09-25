@@ -1,0 +1,88 @@
+  .body {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: black;
+  padding: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+  background: white;
+  text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    font-weight: lighter;
+  }
+  h1 {
+    text-align: center;
+    font-weight: normal;
+    color: red;
+  }
+  p {
+   text-align: center;
+   font-weight: lighter;
+  }
+  li {
+  border: 0.5px solid grey;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 4px 0;
+  list-style: none;
+  display: inline-block;
+  text-align: left;
+  width: auto;
+ }
+  .navbar-header {
+  background-color: #563d7c;
+ }
+.navbar-header .navbar-brand {
+  color:#563d7c;
+}
+
+.navbar-toggle {
+  background-color: #563d7c;
+  border: none;
+  color: #563d7c;
+}
+
+.navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+nav.navbar-nav.li {
+  color: #563d7c;
+  background-color: #563d7c;
+  border: none;
+  border-radius: 0;
+}
+
+#navbar {
+  background-color: #563d7c;
+
+}
+
+#navbar .nav > li > a {
+  color: white;
+}
+
+#navbar .nav > li > a:hover,
+#navbar .nav > li > a:focus {
+  background-color: #452d63;
+  color: red;
+}
+
+#navbar li {
+  border: none !important;
+}
+
+.navbar-toggle {
+  border: none;
+  box-shadow: none;
+}
+

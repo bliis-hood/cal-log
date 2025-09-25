@@ -1,11 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Posts</h1>
-    @if (count($posts) > 0)
-       @foreach ($posts as $post )
-        @endforeach
-    @else
-         <p>No posts found</p>
-    @endif
+    <div class="jumbotron text-center">
+        <h1>{{$title}}</h1>
+        <p>It is where you discover new things and put new things</p>
 @endsection
