@@ -126,3 +126,87 @@ button{
   color: red; 
   margin-bottom: 10px;
 }
+/* Form container */
+.form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: gray;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Heading */
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input fields */
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* Focus effect */
+.form input:focus {
+    border-color: #3490dc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 144, 220, 0.5);
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Hover effect */
+.submit-btn:hover {
+    background: purple;
+}
+.link-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.link {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.register-link {
+    background-color: #38c172; /* green */
+    color: white;
+}
+
+.login-link {
+    background-color: #3490dc; /* blue */
+    color: white;
+}
+
+.link:hover {
+    opacity: 0.85;
+}
+

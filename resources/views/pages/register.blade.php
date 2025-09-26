@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@section('content')
 
     <!-- Show success message -->
     @if(session('success'))
@@ -22,7 +21,7 @@
     @endif
 
     <!-- Register Form -->
-    <form method="POST" action="{{ route('register') }}" class="form" id="register-form">
+    <form method="POST" action="{{ route('register.form') }}" class="form" id="register-form">
         @csrf
         <input type="text" name="name" placeholder="Name" value="{{ old('name') }}" required>
         <input type="email" name="email" placeholder="Email" value="{{ old('email') }}" required>

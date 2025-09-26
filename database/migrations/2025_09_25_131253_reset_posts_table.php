@@ -12,10 +12,10 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('posts', function (Blueprint $table) {
-            $table->id();
-            $table->string('title');
-            $table->mediumText('body');
-            $table->timestamps();
+            $table->id();                  // Auto-incrementing ID
+            $table->string('title');       // Title
+            $table->mediumText('body');    // Post content
+            $table->timestamps();          // created_at and updated_at
         });
     }
 

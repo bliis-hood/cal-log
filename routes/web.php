@@ -27,7 +27,7 @@ Route::get('/login', function () {
 
 Route::post('/login', [LogInController::class, 'login'])->name('login');
 Route::get('/register', [RegisterController::class, 'index']);
-Route::post('/register', [RegisterController::class, 'store'])->name('register');
+Route::post('/register', [RegisterController::class, 'store'])->name('register.form');
 
 
 Route::resource('posts' , PostController::class);
