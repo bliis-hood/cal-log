@@ -28,9 +28,9 @@
             @endif
 
             <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
+            <x-layout>
+              <p>This is my page content.</p>
+            </x-layout>
         </div>
     </body>
 </html>
