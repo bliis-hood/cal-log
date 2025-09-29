@@ -1,12 +1,7 @@
 <?php
 
-use App\Http\Controllers\LogInController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PagesController;
-use App\Http\Controllers\PostController;
-//use App\Http\Controllers\LogInController;
-use App\Http\Controllers\RegisterController;
-use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,15 +14,26 @@ use App\Http\Controllers\AuthController;
 |
 */
 
-Route::get('/', [PagesController::class, 'index']);
-//Route::get('/login', [LogInController::class, 'index']);
-Route::get('/login', function () {
-    return view('pages.login');
-})->name('login.form');
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::post('/login', [LogInController::class, 'login'])->name('login');
-Route::get('/register', [RegisterController::class, 'index']);
-Route::post('/register', [RegisterController::class, 'store'])->name('register.form');
+Route::get('/post', function () {
+    return view('post.index');
+})->name('post.index');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])
+    ->middleware('auth')
+    ->name('dashboard');
 
 
-Route::resource('posts' , PostController::class);
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+require __DIR__.'/auth.php';
