@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>All Posts</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
 </head>
 <body>
     <h1>All Posts</h1>

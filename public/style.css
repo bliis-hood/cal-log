@@ -19,11 +19,6 @@
     text-align: center;
     font-weight: lighter;
   }
-  h1 {
-    text-align: center;
-    font-weight: normal;
-    color: red;
-  }
   p {
    text-align: center;
    font-weight: lighter;
@@ -212,55 +207,112 @@ button{
 .custom-navbar {
     background-color: #000;   
     display: flex;
-    justify-content: center; 
+    justify-content: space-between; 
+    align-items: center;
     padding: 10px 20px; 
     border: none !important; 
 }
-.custom-navbar .navbar-brand {
+.navbar-brand {
     color: #fff;              
     font-size: 1.5rem;
     text-decoration: none;
+    margin: 0 auto; 
     outline: none !important;     
     box-shadow: none !important;    
 }
-.custom-card {
-    border: 2px solid #000;   
-    background-color: grey;   
-    width: 300px;             
-    border-radius: 10px;     
-    padding: 15px;
-    text-align: center;
-}
-
-/* Make all text inside bold + black */
-.custom-card .card-title,
-.custom-card p {
-    font-weight: bold;
-    color:blue;
-}
-
-/* Custom button styling */
-.custom-btn {
-    background-color: #007bff;  
-    color: #fff;               
-    border: 2px solid #007bff; 
-    padding: 6px 12px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: 0.3s ease;
-}
-.custom-btn:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-    color: #fff;
-}
-.card-title{
-  font-weight: bolder;
-}
 .welcome-text {
-    color: #fff;         
+    color: white;
     font-weight: bold;
-    padding: 5px 2px; 
-    display: flex;
-    justify-content: right;  
+    margin-left: auto;
+}
+.card-body {
+    background-color: #6c757d; /* Grey background */
+    border: 1px solid #5a6268; /* Optional: subtle border around the whole card body */
+    color: white; /* All text inside is white */
+    text-align: center; /* Center-align all content */
+    padding: 1.5rem;
+    border-radius: 8px;
+}    
+.card-body .card-title,
+.card-body .fs-3 {
+    margin-bottom: 1rem; /* Add spacing between elements */
+    font-size: 1rem;
+}
+
+.custom-btn {
+    display: inline-block;
+    background-color: #0d6efd; /* Blue background (Bootstrap primary blue) */
+    color: black !important; /* Text color black */
+    border: 2px solid #0d6efd;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+    background-color: red; /* Red background on hover */
+    border-color: red;
+    color: white !important; /* Optional: make text white on hover for better contrast */
+}
+/* Style for the heading */
+h1 {
+    text-align: center;      /* Center horizontally */
+    font-weight: bold;       /* Bold text */
+    color: white;            /* Black color */
+    margin-bottom: 1.5rem;   /* Space below heading */
+    background-color: black;
+}
+
+/* Container for the button-like link */
+.ate {
+    text-align: right;       /* Pushes the link to the right */
+    margin-bottom: 1.5rem;   /* Optional: space below */
+}
+
+/* Button-like style for the link */
+.ate a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: green;        /* Green background */
+    color: black !important;        /* Black text */
+    text-decoration: none;
+    border: 2px solid green;        /* Border matching background */
+    border-radius: 6px;             /* Slightly rounded corners (optional) */
+    font-weight: bold;
+    transition: all 0.3s ease;      /* Smooth hover transition */
+}
+
+.ate a:hover {
+    background-color: blue;         /* Blue on hover */
+    border-color: blue;
+    color: white !important;        /* White text on hover for better contrast */
+}
+.post {
+    background-color: #f8f9fa; /* Light grey background (Bootstrap's light grey) */
+    border: 2px solid #dee2e6; /* Subtle border */
+    border-radius: 8px;        /* Optional: rounded corners for modern look */
+    padding: 1.5rem;           /* Space inside the box */
+    margin-bottom: 1.5rem;     /* Space between posts */
+    text-align: center;        /* Center all text content */
+    max-width: 800px;          /* Optional: limit width for readability */
+    margin-left: auto;         /* Center the post box itself (optional) */
+    margin-right: auto;        /* Center the post box itself (optional) */
+}
+
+.post h2 {
+    margin-bottom: 1rem;
+    color: #212529; /* Dark text for title */
+}
+
+.post p {
+    margin-bottom: 1rem;
+    color: #495057; /* Slightly lighter dark text for body */
+}
+
+.post small {
+    color: #6c757d; /* Grey for date */
+    display: block; /* Ensures it appears on its own line */
+    margin-top: 0.5rem;
 }
