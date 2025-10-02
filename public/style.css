@@ -221,9 +221,47 @@ button{
     box-shadow: none !important;    
 }
 .welcome-text {
-    color: white;
+    color: #fff;
     font-weight: bold;
-    margin-left: auto;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Dropdown menu hidden by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 180px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+/* Dropdown items */
+.profile-text {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.logout-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.logout-btn:hover {
+    background-color: #0056b3;
 }
 .card-body {
     background-color: #6c757d; /* Grey background */
@@ -256,7 +294,7 @@ button{
     border-color: red;
     color: white !important; /* Optional: make text white on hover for better contrast */
 }
-/* Style for the heading */
+/* Style for the heading  for the post page*/
 h1 {
     text-align: center;      /* Center horizontally */
     font-weight: bold;       /* Bold text */
@@ -315,4 +353,66 @@ h1 {
     color: #6c757d; /* Grey for date */
     display: block; /* Ensures it appears on its own line */
     margin-top: 0.5rem;
+}
+    /* Style for the heading  for the create page*/
+.create {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.create h1 {
+    font-weight: bold;
+    color: white;
+}
+
+/* Style the entire form */
+.create-form {
+    background-color: lightgray;
+    border: 2px solid #dee2e6; /* Subtle form-like border */
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem; /* Center the form and add bottom margin */
+    text-align: center; /* Center all content inside */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+
+/* Style form labels and inputs */
+.create-form label {
+    display: block;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.create-form input[type="text"],
+.create-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.create-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* Style the submit button */
+.create-form button[type="submit"] {
+    background-color: #0d6efd; /* Blue background (Bootstrap primary) */
+    color: white;
+    border: 2px; /* Button-style border */
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.create-form button[type="submit"]:hover {
+    background-color: black;
 }
