@@ -209,4 +209,58 @@ button{
 .link:hover {
     opacity: 0.85;
 }
+.custom-navbar {
+    background-color: #000;   
+    display: flex;
+    justify-content: center; 
+    padding: 10px 20px; 
+    border: none !important; 
+}
+.custom-navbar .navbar-brand {
+    color: #fff;              
+    font-size: 1.5rem;
+    text-decoration: none;
+    outline: none !important;     
+    box-shadow: none !important;    
+}
+.custom-card {
+    border: 2px solid #000;   
+    background-color: grey;   
+    width: 300px;             
+    border-radius: 10px;     
+    padding: 15px;
+    text-align: center;
+}
 
+/* Make all text inside bold + black */
+.custom-card .card-title,
+.custom-card p {
+    font-weight: bold;
+    color:blue;
+}
+
+/* Custom button styling */
+.custom-btn {
+    background-color: #007bff;  
+    color: #fff;               
+    border: 2px solid #007bff; 
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.custom-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: #fff;
+}
+.card-title{
+  font-weight: bolder;
+}
+.welcome-text {
+    color: #fff;         
+    font-weight: bold;
+    padding: 5px 2px; 
+    display: flex;
+    justify-content: right;  
+}

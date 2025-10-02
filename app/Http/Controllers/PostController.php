@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -11,7 +11,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::all(); // fetch all posts
+         return view('posts.index', compact('posts')); 
     }
 
     /**
@@ -19,7 +20,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+         return view('posts.create');
     }
 
     /**
@@ -27,7 +28,17 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $request->validate([
+            'title' => 'required',
+            'body' => 'required',
+        ]);
+
+        Post::create([
+            'title' => $request->input('title'),
+            'body' => $request->input('body'),
+        ]);
+
+        return redirect()->route('posts.index')->with('success', 'Post created successfully!');
     }
 
     /**
