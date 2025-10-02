@@ -416,3 +416,74 @@ h1 {
 .create-form button[type="submit"]:hover {
     background-color: black;
 }
+.topnav {
+    text-align: center;
+}
+
+.topnav h1 {
+    font-weight: bold;
+    color: black;
+    font-size: 2.5rem; /* Larger size for impact */
+    background-color: white !important;
+}
+
+.topnav p {
+    color: black;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* Center the container */
+.sm {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+/* Base button-like style for all links */
+.sm a {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    margin: 0.4rem;
+    text-decoration: none;
+    color: black; /* Black text for all */
+    font-weight: bold;
+    border: 2px solid transparent; /* Button-like border */
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* Dashboard: gray background, blue hover */
+.dash {
+    background-color: #6c757d; /* Gray */
+    border-color: #6c757d;
+}
+
+.dash:hover {
+    background-color: #0d6efd; /* Blue */
+    border-color: #0d6efd;
+    color: white !important; /* White text on hover for contrast */
+}
+
+/* Login: purple background, green hover */
+.on {
+    background-color: #6f42c1; /* Purple (Bootstrap's indigo) */
+    border-color: #6f42c1;
+}
+
+.on:hover {
+    background-color: #28a745; /* Green */
+    border-color: #28a745;
+    color: white !important;
+}
+
+/* Register: blue background, green hover */
+.reg {
+    background-color: #0d6efd; /* Blue */
+    border-color: #0d6efd;
+}
+
+.reg:hover {
+    background-color: #28a745; /* Green */
+    border-color: #28a745;
+    color: white !important;
+}
