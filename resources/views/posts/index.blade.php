@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>All Posts</title>
+    <title>Blog Posts</title>
+     <ul class="nav navbar-nav">
+        <li><a href="/posts">Blogs</a></li>
+     </ul>
     <link rel="stylesheet" href="{{ asset('style.css') }}">
 </head>
 <body>
-    <h1>All Posts</h1>
     <div class="ate">
     <a href="{{ route('posts.create') }}">Create New Post</a>
     </div>

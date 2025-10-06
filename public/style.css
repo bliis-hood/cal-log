@@ -24,7 +24,7 @@
    font-weight: lighter;
   }
   li {
-  border: 0.5px solid grey;
+  border: 0.5px solid black;
   border-radius: 4px;
   padding: 8px;
   margin: 4px 0;
@@ -68,7 +68,6 @@ nav.navbar-nav.li {
 
 #navbar .nav > li > a:hover,
 #navbar .nav > li > a:focus {
-  background-color: #452d63;
   color: red;
 }
 
@@ -486,4 +485,29 @@ h1 {
     background-color: #28a745; /* Green */
     border-color: #28a745;
     color: white !important;
+}
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    border: 2px solid black;
+}
+.navbar-nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navbar-nav li a {
+    color: white;
+    text-decoration: none !important;
+    display: inline-block;
+    text-align: center;
+    font-weight: bolder;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-nav li a:hover {
+    color: red;
 }
