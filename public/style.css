@@ -511,3 +511,53 @@ h1 {
 .navbar-nav li a:hover {
     color: red;
 }
+.login-form {
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 2rem auto; /* Centers the form */
+    font-family: Arial, sans-serif;
+}
+
+.login-form .log-email,
+.login-form .log-pass {
+    margin-bottom: 1.2rem;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.login-form input[type="email"]:focus,
+.login-form input[type="password"]:focus {
+    outline: none;
+    border-color: #007bff; /* Blue focus ring */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.login-form button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

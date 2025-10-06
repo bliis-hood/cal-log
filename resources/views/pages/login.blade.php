@@ -1,6 +1,11 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-@section('content')
+        <title>Log IN</title>
+        <link rel="stylesheet" href="{{ asset('style.css') }}">
 <div class="log-on" >
     <h2>Login</h2>
 
@@ -32,6 +37,5 @@
         </button>
     </form>
 </div>
-@endsection
 
 
