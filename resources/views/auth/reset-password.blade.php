@@ -2,10 +2,13 @@
 <html>
 <head>
     <title>Reset Password</title>
-</head>
-<body style="font-family: Arial; background-color: #f4f4f4; padding: 40px;">
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
+    <script src="{{ asset('password.js') }}"></script>
 
-    <div style="max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 8px;">
+</head>
+<body class="rest">
+
+    <div class="pword">
         <h2>Reset Password</h2>
 
         <form method="POST" action="{{ route('password.store') }}">
@@ -15,30 +18,31 @@
             <input type="hidden" name="token" value="{{ request()->route('token') }}">
 
             <!-- Email -->
-            <div style="margin-bottom: 15px;">
+            <div class="ail">
                 <label>Email</label>
-                <input type="email" name="email" value="{{ old('email', request('email')) }}" required autofocus
-                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
-                @error('email') <p style="color:red;">{{ $message }}</p> @enderror
+                <input type="email" name="email" value="{{ old('email', request('email')) }}" required autofocus>
+                @error('email') <p>{{ $message }}</p> @enderror
             </div>
 
             <!-- New Password -->
-            <div style="margin-bottom: 15px;">
+            <div class="word">
                 <label>New Password</label>
-                <input type="password" name="password" required
-                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
-                @error('password') <p style="color:red;">{{ $message }}</p> @enderror
+                <input type="password" id="password" name="password" class="input-field" required>
+                @error('password') <p>{{ $message }}</p> @enderror
             </div>
 
             <!-- Confirm Password -->
-            <div style="margin-bottom: 15px;">
+            <div class="conf">
                 <label>Confirm Password</label>
-                <input type="password" name="password_confirmation" required
-                       style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                <input type="password" id="confirm_password" name="confirm_password" class="input-field" required>
             </div>
 
-            <button type="submit" 
-                    style="background-color: black; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">
+            <div class="show-password-container">
+                <input type="checkbox" id="showPassword">
+                <label for="showPassword">Show Password</label>
+            </div>
+
+            <button type="submit">
                 Reset Password
             </button>
         </form>

@@ -561,3 +561,95 @@ h1 {
 .login-form button[type="submit"]:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
+.rest{
+    font-family: Arial; 
+    background-color: #f4f4f4; 
+    padding: 40px;
+}
+.pword{
+    max-width: 400px; 
+    margin: auto; 
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px;
+}
+.pword h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ail label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.ail input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.ail p.error {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.word label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.word .input-field {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.word p.error {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.conf label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.conf .input-field{
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.conf p.error {
+    color: red;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.show-password-container {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.show-password-container input[type="checkbox"] {
+    margin-right: 6px;
+    cursor: pointer;
+}
+rest button [type="submit"]{
+    background-color: black; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+rest button [type="submit"]:hover {
+    background-color: blue; /* Darker blue on hover */
+}
