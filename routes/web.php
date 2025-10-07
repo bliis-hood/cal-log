@@ -47,7 +47,7 @@ Route::get('/forgot-password', [PasswordResetLinkController::class, 'create'])
 
 // Send reset link email
 Route::post('/forgot-password', [PasswordResetLinkController::class, 'store'])
-    ->middleware('guest')
+    ->middleware('throttle:password-reset')
     ->name('password.email');
 
 // Reset password form (link from email goes here)
