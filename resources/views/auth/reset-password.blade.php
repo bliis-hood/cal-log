@@ -4,7 +4,6 @@
     <title>Reset Password</title>
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <script src="{{ asset('password.js') }}"></script>
-
 </head>
 <body class="rest">
 
@@ -34,7 +33,7 @@
             <!-- Confirm Password -->
             <div class="conf">
                 <label>Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" class="input-field" required>
+                <input type="password" id="password_confirmation" name="password_confirmation" class="input-field" required>
             </div>
 
             <div class="show-password-container">
